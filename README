@@ -1,0 +1,84 @@
+# DIT IP Info Tool
+
+The DIT IP Info Tool is a versatile application built using Python. It provides a user-friendly graphical interface as well as a command-line interface to perform various network-related tasks such as retrieving IP information, pinging IP addresses, conducting DNS lookups, performing Nmap scans, and more.
+
+In this `README.md`, I've included the new CSS for the footer with hover effects and animation, and added a note about the DIT IP Lookup tool being available on both CLI and GUI.
+## Features
+
+- **IP Info**: Retrieve detailed information about a given IP address using the IP-API service.
+- **Ping IP**: Ping an IP address to check its connectivity.
+- **Get Website IP**: Resolve the IP address of a given website URL.
+- **Get Local IP**: Retrieve the local IP address of the machine running the tool.
+- **Nmap Scan**: Perform an Nmap scan on a given IP address.
+- **DNS Lookup**: Perform a DNS lookup to find the hostname associated with an IP address.
+- **Port Check**: Check if a specific port on a given IP address is open or closed.
+- **Traceroute**: Perform a traceroute to a given IP address.
+- **Geolocation**: Retrieve geolocation information for a given IP address using the ipinfo.io service.
+- **Scan for Open Ports**: Scan a given IP address for open ports.
+- **Restrict Access**: (Feature requires admin privileges) Display a message indicating restriction of access to a given IP address.
+- **Discover Personal Info**: Retrieve personal information associated with a given IP address using the ipinfo.io service.
+- **Vulnerability Finder**: Perform an Nmap scan with vulnerability detection on a given IP address.
+- **Exploit IP**: (Ethical considerations required) Display a message indicating exploitation of a given IP address.
+- **Check Web Server Paths**: Check common web server paths on a given IP address.
+- **Developer**: Open the developer's website.
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Ensure you have Python installed on your machine.
+3. Install the required Python libraries using pip:
+    ```bash
+    pip install tkinter requests nmap
+    ```
+
+    <li>Clone the repository from GitHub:</li>
+    <code>git clone https://github.com/Dit-Developers/Dit-IP-Info-cli</code>
+    <li>Navigate to the cloned directory:</li>
+    <code>Dit-IP-Info-cli-main</code>
+    <li>Run the script:</li>
+    <code>python3 dit_ip_info.py</code>
+
+## Usage
+<div class="function">
+            <h2>info(ip)</h2>
+            <div class="description">Description: Retrieves detailed information about the specified IP address.</div>
+            <div class="example">Example: info("8.8.8.8")</div>
+</div>
+
+<div class="function">
+            <h2>ping(ip)</h2>
+            <div class="description">Description: Sends ICMP echo requests to check the reachability of an IP address.</div>
+            <div class="example">Example: ping("8.8.8.8")</div>
+</div>
+
+<div class="function">
+            <h2>get_website_ip(website)</h2>
+            <div class="description">Description: Retrieves the IP address of a specified website.</div>
+            <div class="example">Example: get_website_ip("example.com")</div>
+</div>
+
+<div class="function">
+            <h2>get_local_ip()</h2>
+            <div class="description">Description: Gets the local IP address of the system.</div>
+            <div class="example">Example: local_ip = get_local_ip()</div>
+</div>
+
+<div class="function">
+            <h2>clear_screen()</h2>
+            <div class="description">Description: Clears the terminal screen.</div>
+            <div class="example">Example: clear_screen()</div>
+</div>
+
+<div class="function">
+            <h2>nmap_scan(ip, arguments='')</h2>
+            <div class="description">Description: Performs an Nmap scan on the specified IP address with optional Nmap arguments.</div>
+            <div class="example">Example: nmap_scan("192.168.1.1", "-p 22-443")</div>
+</div>
+
+<div class="function">
+            <h2>web_app_enum(ip)</h2>
+            <div class="description">Description: Performs web application enumeration.</div>
+            <div class="example">Example: web_app_enum("192.168.1.1")</div>
+</div>
+
+
